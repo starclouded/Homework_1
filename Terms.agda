@@ -1,6 +1,6 @@
-open import NonDependentTypes
+module Terms where
 
-module Terms where 
+open import NonDependentTypes
 
 -- Unit type
 term-⊤ : ⊤
@@ -25,22 +25,6 @@ term-+₁ = inj₁ term-⊤
 term-+₂ : ⊤ +  ℕ
 term-+₂ = inj₂ (succ zero)
 
--- Enumerated type
-term-Wd₁ : WeekDay
-term-Wd₁ = monday
-
-term-Wd₂ : WeekDay
-term-Wd₂ = tuesday
-
-term-Wd₃ : WeekDay
-term-Wd₃ = wednesday
-
-term-Wd₄ : WeekDay
-term-Wd₄ = thursday
-
-term-Wd₅ : WeekDay
-term-Wd₅ = friday
-
 -- Function type
 isEven : ℕ → Set
 isEven zero = ⊤
@@ -56,7 +40,7 @@ one : ℕ
 one = succ zero
 
 -- List type
-term-L : List ℕ 
+term-L : List ℕ
 term-L = (succ zero) ∷ (succ (succ zero) ∷ nil)
 
 -- Tree type
