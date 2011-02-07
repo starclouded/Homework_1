@@ -25,6 +25,10 @@ term-+₁ = inj₁ term-⊤
 term-+₂ : ⊤ +  ℕ
 term-+₂ = inj₂ (succ zero)
 
+-- Enumeration type
+term-Wd₁ : WeekDay
+term-Wd₁ = monday
+
 -- Function type
 isEven : ℕ → Set
 isEven zero = ⊤
